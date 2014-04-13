@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akshay.sangeetplayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.akshay.sangeetplayer.MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.PlayerContol"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/title_activity_player_contol" >
+        </activity>
+
+        <service android:name="com.akshay.sangeetplayer.service.MediaService" >
+        </service>
+
+        <activity
+            android:name="com.akshay.sangeetplayer.Albums"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/title_activity_albums" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.Artist"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/title_activity_artist" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.AlbumView"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/title_activity_album_view" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.data.Fxeffects.EqualizerFxActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/title_activity_equalizer_fx" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.ArtistAlbum"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/title_activity_artist_album" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.AlbumArtistSongs"
+            android:label="@string/title_activity_album_artist_songs" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.net.StreamInput"
+            android:label="@string/title_activity_stream_input" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.SearchAct"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.SearchDemo"
+            android:label="@string/title_activity_search_demo" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.GenreView"
+            android:label="@string/title_activity_genre_view" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.GenreSongs"
+            android:label="@string/title_activity_genre_songs" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.video.VideoList"
+            android:label="@string/title_activity_video_list" >
+        </activity>
+        <activity
+            android:name="com.akshay.sangeetplayer.VideoPlayer"
+            android:label="@string/title_activity_video_player" >
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name="com.akshay.sangeetplayer.video.Video_Player"
+            android:label="@string/title_activity_video__player" >
+        </activity>
+    </application>
+
+</manifest>

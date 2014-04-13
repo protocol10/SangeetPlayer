@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/album_item" android:title="@string/album_item"></item>
+    <item android:id="@+id/artist_item" android:title="@string/artist_item"></item>
+    <item android:id="@+id/network" android:title="Network Stream"></item>
+    <item android:id="@+id/video_item" android:title="Video"></item>
+    <item android:id="@+id/genre" android:title="Genre"></item>
+
+</menu>
